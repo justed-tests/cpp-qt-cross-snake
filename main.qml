@@ -11,7 +11,7 @@ Item {
   width: 1280
   height: 768
   visible: true
-  focus: true
+  //focus: true
 
   Keys.onEscapePressed: {
     Qt.quit()
@@ -50,5 +50,6 @@ Item {
     focus: true
     aspects: "input"
 
+    GameArea {}
   }
 }
