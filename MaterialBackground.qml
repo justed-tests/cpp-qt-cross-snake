@@ -15,7 +15,7 @@ Material {
     techniques: [
       Technique {
         graphicsApiFilter {
-          api: GraphicsFilter.OpenGL
+          api: GraphicsApiFilter.OpenGL
           majorVersion: 3
           minorVersion: 2
         }
@@ -30,7 +30,7 @@ Material {
 
       Technique {
         graphicsApiFilter {
-          api: GraphicsFilter.OpenGLES
+          api: GraphicsApiFilter.OpenGLES
           majorVersion: 2
           minorVersion: 0
         }
