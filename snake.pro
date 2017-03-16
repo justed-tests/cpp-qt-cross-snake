@@ -8,12 +8,10 @@ SOURCES += main.cpp
 
 HEADERS +=
 
-RESOURCES += \
-          snake.qrc
-
-#
-
 target.files = snake
 target.path = ./builds
 
 INSTALS += target
+
+RESOURCES += \
+    snake.qrc

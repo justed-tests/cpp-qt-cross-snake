@@ -1,3 +1,9 @@
 *.swp
+*.o
+
+
+
+
+snake
 .qmake.stash
 Makefile
