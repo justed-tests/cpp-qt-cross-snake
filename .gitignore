@@ -1,0 +1,3 @@
+*.swp
+.qmake.stash
+Makefile
