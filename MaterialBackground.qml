@@ -4,10 +4,17 @@ import Qt3D.Render 2.0
 Material {
   id: material
 
+  parameters: [
+    Parameter {
+      name: "score"
+      value: score
+    }
+  ]
+
   effect: Effect {
     techniques: [
       Technique {
-        graphicsFilter {
+        graphicsApiFilter {
           api: GraphicsFilter.OpenGL
           majorVersion: 3
           minorVersion: 2
@@ -22,7 +29,7 @@ Material {
       },
 
       Technique {
-        graphicsFilter {
+        graphicsApiFilter {
           api: GraphicsFilter.OpenGLES
           majorVersion: 2
           minorVersion: 0
