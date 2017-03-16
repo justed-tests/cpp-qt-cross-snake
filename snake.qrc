@@ -1,6 +1,21 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+
+        <file>Apple.qml</file>
+        <file>Background.qml</file>
         <file>GameArea.qml</file>
+        <file>GameEntity.qml</file>
+        <file>MaterialBackground.qml</file>
+        <file>SnakePart.qml</file>
+        <file>Wall.qml</file>
+
+        <file>models/apple.obj</file>
+
+        <file>shaders/gl3/grass.frag</file>
+        <file>shaders/gl3/grass.vert</file>
+
+        <file>shaders/es2/grass.frag</file>
+        <file>shaders/es2/grass.vert</file>
     </qresource>
 </RCC>

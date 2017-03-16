@@ -67,5 +67,7 @@ Entity {
     }
   }
 
+  Apple {}
+
   components: [frameFraph, input]
 }
