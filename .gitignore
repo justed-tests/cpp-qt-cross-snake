@@ -3,6 +3,7 @@
 
 
 
+qrc_*.cpp
 
 snake
 .qmake.stash
