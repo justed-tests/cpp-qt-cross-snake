@@ -2,9 +2,9 @@ var SNAKE_TYPE = 1
 var WALL_TYPE = 2
 var APPLE_TYPE = 3
 
-var snakeComponent = Qt.createComponent("Snake.qml")
-var wallComponent = Qt.createComponent("Wall.qml")
-var appleComponent = Qt.createComponent("Apple.qml")
+var snakeComponent = Qt.createComponent("Snake.qml");
+var wallComponent = Qt.createComponent("Wall.qml");
+var appleComponent = Qt.createComponent("Apple.qml");
 
 function GameFactory () {
   this.board = null
@@ -34,7 +34,7 @@ GameFactory.prototype.createGameEntity = function (type, column, row) {
   }
 
   var gameEntity = component.createObject(this.parentEntity)
-  var gameEntity.setParent(this.parentEntity)
+  gameEntity.setParent(this.parentEntity)
 
   this.board.setData(gameEntity, column, row)
   gameEntity.gridPosition = Qt.vector2d(column, row)

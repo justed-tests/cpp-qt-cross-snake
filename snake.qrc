@@ -17,5 +17,10 @@
 
         <file>shaders/es2/grass.frag</file>
         <file>shaders/es2/grass.vert</file>
+
+
+        <file>board.js</file>
+        <file>engine.js</file>
+        <file>factory.js</file>
     </qresource>
 </RCC>

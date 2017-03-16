@@ -4,6 +4,8 @@ import Qt3D.Extras 2.0
 import Qt3D.Input 2.0
 import QtQuick 2.6 as QQ2
 
+import "engine.js" as Engine
+
 Entity {
   id: root
 
@@ -49,13 +51,28 @@ Entity {
     sourceDevice: keyboardController
     focus: true
     onPressed: {
+      Engine.handleKeyEvent(event)
       console.warn("crazy stuff")
     }
   }
 
   QQ2.Component.onCompleted: {
+    //console.warn('loaded, delaying')
     console.warn("Start game...")
+    //preloader.start()
+    Engine.start()
     timer.start()
+  }
+
+  QQ2.Timer {
+    id: preloader
+    interval: 1500
+    repeat: false
+    onTriggered: {
+      console.warn("Start game...")
+      Engine.start()
+      timer.start()
+    }
   }
 
   QQ2.Timer {
@@ -63,7 +80,7 @@ Entity {
     interval: initialTimeInterval
     repeat: true
     onTriggered: {
-      //console.warn("timer triggerered")
+      Engine.update()
     }
   }
 
